@@ -43,7 +43,7 @@ $(document).ready(function() {
 
         $("#number-to-guess").text(targetNumber);
 
-        var counter = 0;
+        counter = 0;
 
 
         var crystalNum = new Array(4);
