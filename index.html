@@ -8,30 +8,39 @@
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 </head>
 
-<body>
-    <h1>Number to Guess: <span id="number-to-guess"></span></h1>
-    <!-- Note that this div is now empty. We will fill it dynamically -->
+<body class="bg-warning">
+    <h1 class="page-header bg-danger row col-md-8">Crystals Collector!</h1>
+    <div class="bg-success row col-md-8" id="rules">
+        <p>You will be given a random number to guess at the start of the game.</p>
+        <p>There are four crystals below. By clicking on a crystal you will add a specific amount of points to your total score.</p>
+        <p>You win the game by matching your total score to the random number to guess, you lose the game if your total score goes above the random number to guess.</p>
+        <p>The value of each crystal is hidden from you until you click on it.</p>
+        <p>Each time when the game starts, the game will change the values of each crystal.</p>
+    </div>
+    <div class="row col-md-8 bg-primary">
+        <h1>Number to Guess: <span id="number-to-guess"></span></h1>
+    </div>
     <div class="row">
-      
-     
-    <div class="col-md-3" id="red-crystal" data-crystalvalue="">
-    <img src="assets/images/red_crystal.jpg" alt="red-crystal">
+        <div class="col-md-8">
+            <div class="col-md-3" id="red-crystal" data-crystalvalue="">
+                <img src="assets/images/red_crystal.jpg" alt="red-crystal">
+            </div>
+            <div class="col-md-3" id="green-crystal" data-crystalvalue="">
+                <img src="assets/images/green_crystal.jpg" alt="green-crystal">
+            </div>
+            <div class="col-md-3" id="blue-crystal" data-crystalvalue="">
+                <img src="assets/images/blue_crystal.jpg" alt="blue-crystal">
+            </div>
+            <div class="col-md-3" id="black-crystal" data-crystalvalue="">
+                <img src="assets/images/black_crystal.jpg" alt="black-crystal">
+            </div>
+        </div>
+        <div class="col-md-3" id="totalWinLoss">
+            <h2 id="total">Current Total: <span id="current-total"></span></h2>
+            <h3 id="win">Wins: <span id="wins"></span></h3>
+            <h3 id="loss">Losses: <span id="losses"></span></h3>
+        </div>
     </div>
-    <div class="col-md-3" id="green-crystal" data-crystalvalue="">
-      <img src="assets/images/green_crystal.jpg" alt="green-crystal">
-    </div>
-    <div class="col-md-3" id="blue-crystal" data-crystalvalue="">
-      <img src="assets/images/blue_crystal.jpg" alt="blue-crystal">
-    </div>
-    <div class="col-md-3" id="black-crystal" data-crystalvalue="">
-      <img src="assets/images/black_crystal.jpg" alt="black-crystal">
-    </div>
-
-    </div>
-     <h2>Current Total: <span id="current-total"></span></h2>
-     <h3>Wins: <span id="wins"></span></h3>
-     <h3>Losses: <span id="losses"></span></h3>
-
     <script type="text/javascript" src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
     <script type="text/javascript" src="assets/javascript/game.js"></script>
 </body>

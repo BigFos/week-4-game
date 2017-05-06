@@ -1,4 +1,22 @@
-/* .crystals {
-    width: 200px;
-    height: 200px;
- }*/
+#totalWinLoss {
+    background-color: black;
+}
+
+#total{
+	color: white;
+}
+
+#win{
+ 	color: green;
+}
+
+#loss{
+ 	color: red;
+}
+
+body{
+	margin-left: 5%;
+}
+#rules{
+	margin-bottom: 20px;
+}
