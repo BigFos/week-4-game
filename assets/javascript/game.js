@@ -39,7 +39,7 @@ $(document).ready(function() {
 
 
     function init() {
-        var targetNumber = Math.floor(Math.random() * ((120 - 19) + 1) + 19);
+        targetNumber = Math.floor(Math.random() * ((120 - 19) + 1) + 19);
 
         $("#number-to-guess").text(targetNumber);
 
